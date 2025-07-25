@@ -4,13 +4,12 @@ import jakarta.validation.constraints.NotBlank;
 
 import java.time.LocalDate;
 
-public class PrenotazioneDTO {
-    @NotBlank
-    public int id;
-    @NotBlank
-    public int viaggioId;
-    @NotBlank
-    public int dipendenteId;
-    @NotBlank
-    public LocalDate dataRichiestaPrenotazione;
+public record PrenotazioneDTO(
+        @NotBlank(message = "Id del dipendente obbligatorio")
+        Integer dipendenteId,
+        @NotBlank(message = "Id del viaggio obbligatorio")
+        Integer ViaggioId,
+        @NotBlank(message = "Data richiesta obbligatoria")
+        LocalDate dataRichiesta,
+        String note) {
 }
