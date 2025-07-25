@@ -1,4 +1,4 @@
-package Ren_Mor.gestione_viaggi.DTO;
+package Ren_Mor.gestione_viaggi.payloads;
 
 import java.time.LocalDate;
 

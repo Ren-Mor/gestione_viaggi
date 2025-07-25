@@ -1,4 +1,4 @@
-package Ren_Mor.gestione_viaggi.DTO;
+package Ren_Mor.gestione_viaggi.payloads;
 
 import Ren_Mor.gestione_viaggi.enums.StatoViaggio;
 

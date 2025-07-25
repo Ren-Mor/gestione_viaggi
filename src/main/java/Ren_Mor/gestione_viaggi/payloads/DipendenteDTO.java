@@ -1,4 +1,4 @@
-package Ren_Mor.gestione_viaggi.DTO;
+package Ren_Mor.gestione_viaggi.payloads;
 
 public class DipendenteDTO {
     public int id;
