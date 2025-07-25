@@ -4,7 +4,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.Data;
 
 @Entity
 public class Dipendente {
@@ -17,6 +16,7 @@ public class Dipendente {
     private String nome;
     private String username;
     private String email;
+    private String immagineProfilo;
 
     public Dipendente(){}
 
@@ -62,5 +62,13 @@ public class Dipendente {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getImmagineProfilo() {
+        return immagineProfilo;
+    }
+
+    public void setImmagineProfilo(String immagineProfilo) {
+        this.immagineProfilo = immagineProfilo;
     }
 }
